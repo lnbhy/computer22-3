@@ -69,8 +69,8 @@ int main()
     const char* filename ="1.cpp"; //1.cpp修改成自己的文件路径
     // 调用 GetString 函数，读取文件内容
     char* result = GetString(filename); 
-    // 判断是否成功读取内容
-    
+    cout << result << endl; // 输出处理后的字符串
+
     // 释放分配的内存
     delete[] inf; 
 
