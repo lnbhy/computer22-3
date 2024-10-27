@@ -70,15 +70,7 @@ int main()
     // 调用 GetString 函数，读取文件内容
     char* result = GetString(filename); 
     // 判断是否成功读取内容
-    if (result != NULL)
-    {
-        cout << result << endl; // 输出处理后的字符串
-    }
-    else
-    {
-        cout << "读取文件失败!" << endl; // 处理读取失败的情况
-    }
-
+    
     // 释放分配的内存
     delete[] inf; 
 
