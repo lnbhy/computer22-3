@@ -1,4 +1,4 @@
-/*使用建议（省力版）：使用提供的测试文件Job.c1，见711行，Job.c1需要放在D盘根目录下*/
+/*使用建议（省力版）：使用提供的测试文件job.cl，见711行，job.cl需要放在D盘根目录下*/
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
