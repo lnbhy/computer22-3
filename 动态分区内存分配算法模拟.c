@@ -1,3 +1,4 @@
+/*使用建议（省力版）：使用提供的测试文件Job.c1，见711行，Job.c1需要放在D盘根目录下*/
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
@@ -706,3 +707,9 @@ void main(void)
     }
     getch();
 }
+/*
+job_ID	size		status
+1	    150	         1
+2		100	         1
+3		50	         1
+*/
