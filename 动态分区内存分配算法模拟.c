@@ -372,8 +372,8 @@ else printf("\nMay be you should move the fragment together ."); /* Unsuccessful
 */
 return startAddress;
 }
-void insertUsedNode(struct usedList **used,int id,int startAddress) /*插入释放的空间
-到 used 链表中（作业号为 id，startAddress 由函数 13 返回）*/
+void insertUsedNode(struct usedList **used,int id,int startAddress)
+ /*插入释放的空间到 used 链表中（作业号为 id，startAddress 由函数 13 返回）*/
 {
 struct usedList *q,*r,*prer;
 if((q = malloc(sizeof(struct usedList))) == NULL)
@@ -394,8 +394,7 @@ q -> next = prer -> next;
 prer -> next = q;
 }
 int finishJob(struct usedList **used,int id,int *startAddress) 
-/*结束一个作业号为 id 的作业，释放存储空间（由*startAddress 返回空间的起始地址）
-*/
+/*结束一个作业号为 id 的作业，释放存储空间（由*startAddress 返回空间的起始地址）*/
 {
 struct usedList *p,*prep;
 prep = *used;
@@ -602,7 +601,9 @@ void main(void)
             switch(status)
             {
             case 0: printf("\nOk !The job's status is correct !");
-            fprintf(fp,"\nOk !The job's status is correct !");fclose(fp);break;
+            fprintf(fp,"\nOk !The job's status is correct !");
+            fclose(fp);
+            break;
             case 1: printf("\nThe job was in the memory !");
             fprintf(fp,"\nThe job was in the memory !");fclose(fp);goto label;
             case 2: printf("\nThe job was finished !");
